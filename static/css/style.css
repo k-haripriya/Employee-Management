@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;1,200;1,400&family=Poppins:ital,wght@0,400;0,600;0,800;1,700&display=swap');
+*
+{
+    font-family:'Noto Sans',sans-serif;
+} 
+
+  
+  
+.error
+{
+   color: red;
+    margin: 8%;
+    font-size:15px;
+    position: absolute;
+    margin-top: -20px;
+
+}
+nav
+{
+    display:flex;
+    align-items: center;
+}
+.addbutton
+{
+    padding: 20px;
+    margin-left: 200%;
+    margin-top: -10%;
+    border-width: 2px;;
+    border-color: black;
+    box-shadow:inset;
+    border-radius: 15px;
+
+}
+#logo
+{
+    margin-top: 1%;
+    margin-left: 20%;
+    height: 80px;
+    padding: 30px;
+    
+}
+#form
+{
+   margin-left:35%;
+   margin-top: 50px;
+   font-size: 20px;
+} 
+#label
+{
+   padding: 20px;
+}
+.submit
+{
+    margin-left: 22%;
+    margin-top: 100px;
+    padding: 10px;
+    font-size: 15px;
+}  
+.box
+{
+    position: absolute;
+    left: 800px;
+}
+textarea
+{
+    resize: none;
+    width: 180px;
+    height: 80px;
+}
+table
+{
+    
+    margin-left: 25%;
+    margin-top: 5%;
+
+}
+th,td
+{
+    border:1px solid;
+    padding: 20px;
+}
+
+
+.editbutton
+{
+    padding: 5px;
+    margin:5px;
+    border:1px solid black;
+    
+    
+}
+.deletebutton
+{
+    padding: 5px;
+    margin:5px;
+    border:1px solid black;
+  
+}

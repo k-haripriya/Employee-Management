@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            ADD DETAILS
+        </title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+        <script src="{{url_for('static', filename='script.js')}}"></script>
+
+    </head>
+    <body style="background-image: url('{{ url_for('static', filename='cool-background.jpg') }}'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+        <nav>
+            <img src="{{url_for('static',filename='logo.svg')}}" id="logo">
+        </nav>
+        <form id="form" name="form" action="{{url_for('submit')}}" method="POST">
+            <div id="label">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name ="email" class="box" required  onchange="valemail();"></input>
+            
+            </div>
+            <span id="emailerror" class="error"></span>
+            <div id="label">
+            <label for="fname" >First Name:</label>
+            <input type="text" id="fname" name="fname" class="box" required onchange="valfname();">
+            </div>
+            <span id="fnameerror" class="error"></span>
+            <div id="label">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" class="box" required onchange="vallname();">
+            </div>
+            <span id="lnameerror" class="error"></span>
+            <div id="label">
+            <label for="mobile">Mobile:</label>
+            <input type="text"class="box" id="mobile" name="mobile" required onchange="valmob();">
+            </div>
+            <span id="mobileerror" class="error"></span>
+            <div id="label">
+            <label for="dob">DOB:</label>
+            <input type="date"  class="box" id="dob" name="dob" required onchange="valdate();">
+            </div>
+            <span id="doberror" class="error"></span>
+            <div id="label">
+            <label for="address">Address:</label>
+            <textarea maxlength="50" class="box"  name="address"> </textarea>
+            </div>
+            <div>
+            <button class="submit" type="submit" onclick="check();">Submit</button>
+            </div>
+            
+        </form>
+    </body>
+</html>
